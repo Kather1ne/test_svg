@@ -114,6 +114,7 @@ input[type="checkbox"]:checked + label::after {
 	outline: none;
 	border: none;
 	cursor: pointer;
+	text-transform: uppercase;
 }
 
 .btn.checked {
