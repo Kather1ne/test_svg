@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+	<title>Test svg</title>
+</head>
+<body>
+
+<object id="svgObject" type="image/svg+xml" data="image.svg" >
+   Your browser does not support SVG
+</object>
+
+<div class="form">
+	<div class="bg"></div>
+	<form action="" id="contact-form">
+		<div class="exit"></div>
+		<div class="title">Оставить заявку</div>
+		<div class="name">
+			<p class="description">Ваше имя</p>
+			<input type="text" name="name" class="input" placeholder="Введите имя">
+		</div>
+		<div class="email">
+			<p class="description">Email</p>
+			<input type="text" name="email" class="input" placeholder="Введите email">
+		</div>
+		<div class="number">
+			<p class="description">телефон</p>
+			<input type="text" name="number" class="input" placeholder="+7 (9XX) XXX-XX-XX">
+		</div>
+
+		<input type="checkbox" id="check" name="check"/>
+		<label for="check" class="description"><span></span>Принимаю <a href="">пользовательское соглашение</a></label>
+		<input type="submit" class="btn" />
+	</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

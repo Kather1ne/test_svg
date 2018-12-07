@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+#svgObject {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.form {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.form.show {
+	display: block;
+}
+
+.bg {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.34;
+}
+
+#contact-form {
+	width: 388px;
+	height: 469px;
+	border-radius: 3px;
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	padding: 40px 50px;
+	box-sizing: border-box;		
+	font-size: 10px;
+}
+
+.title {
+	text-align: center;
+	font-size: 18px;
+	color: #3eb5f1;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.description, a {
+	color: #646464;
+	text-transform: uppercase;
+	margin: 22px 0 5px;
+	font-weight: 500;
+}
+
+.input, input[type="checkbox"] + label span {
+	background: #f7f7f7;
+	border: 1px solid #e1e1e1;
+	border-radius: 2px;	
+	padding: 15px;
+	width: calc(100% - 30px);
+	font-weight: 300;
+	font-size: 12px;
+}
+
+input[type="checkbox"] {
+	display:none;
+}
+input[type="checkbox"] + label {
+	margin: 20px 0 30px;
+	display: block;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin: -4px 10px 0 0;
+	padding: 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+input[type="checkbox"]:checked + label{
+	position: relative;
+}
+input[type="checkbox"]:checked + label::after {
+	content: "";
+	background: #3eb5f1;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	left: 6px;
+	border-radius: 2px;
+	margin-top: -2px;
+}
+
+.btn {
+	width: 205px;
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.btn.checked {
+	background: #3eb5f1;
+	color: #fff;
+}
+
+.exit {
+	width: 28px;
+	height: 50px;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	z-index: 10;
+}
+
+.exit::before {
+	content: "\00d7";
+	display: block;
+	font-size: 40px;
+	transition: transform 0.5s ease;
+	color: #bfbfbf;
+	font-weight: lighter;
+	line-height: 0.5;
+	transform-origin: 12px 13px;
+}
+.exit:hover::before {
+	content: "\00d7";
+	transform: rotate(180deg);
+}
